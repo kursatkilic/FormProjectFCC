@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="index.css">
+  <title> CONTACT US</title>
+</head>
+<body>
+  <div class="container"> 
+   <header>
+       <h1 id="title"> Consumer Complaint form </h1>
+       <p id="description" class="description">Thank you for taking your time to contact us. </p>
+   </header>
+
+
+   <form id="survey-form">
+       <div class="formgroup">
+        <label id="name-label" for="name">Name Surname</label>
+        <input type="text" name="name" id="name" class="form-check" placeholder="Enter your name and surname" required />
+
+        <label id="email-label"  for="email"> E-mail </label>
+        <input  type="email" name="email" id="email" class="form-check" placeholder="Enter your e-mail" required/>
+
+        <label id="age-label" for="age"> Age </label>
+        <input type="number" name="age" id="age" min="12" max="105"    class="ageclue" placeholder=" Age"required/>
+
+        <label id="Tellabel" for="Telephonenumber"> Telephone Number</label>
+        <input type="tel" name="Telephonenumber"  id="tel" class="form-check" placeholder="Enter your contact number" required/>
+       </div>
+       <div class="formgroup">
+        <p> Subject of complaint </p>
+        <select id="dropdown" name="role" class="form-check" required>
+
+            <option value="Delivery"> Delivery </option>
+            <option value="Payment">Payment</option>
+            <option value="Product">Product issues</option>
+            <option value="Customerservice"> Customer Service </option>
+        </select>
+    </div>
+    <div class="form-group">
+
+        <p>Would you recommend our product to a friend?</p>
+        <label ><input name="recomemnd" value="Definetly" type="radio" class="inputradio" checked/> Definetly  </label>
+        <label> <input name="recomemnd" value="Maybe"       type="radio"  class="inputradio" /> Maybe   </label>
+      <label> <input name="recommend"  value="Not Sure" type="radio" class="inputradio" /> Not Sure  </label>
+</div>
+<div class="formgroup">
+<p> Which contact type do you prefer?</p>
+
+<select id="callback" name="callback"  class="form-check" required>
+    <option value="Telephone">Telephone</option>
+    <option value="E-mail">E-mail</option>
+    <option value="Post">Post </option>
+</select>
+
+</div>
+<div class="formgroup">
+    <p> What changes you would like to see in our company? </p>
+
+    <label><input name="prefer" value="Delivery" type="checkbox" class="inputcheckbox"/> Delivery   </label>
+    <label> <input name="prefer" value="Customer" type="checkbox" class="inputcheckbox"/> Customer Service </label>
+    <label> <input name="prefer" value="Website" type="checkbox"  class="inputcheckbox"/> Website  </label>
+    <label> <input name="prefer" value="Products"type="checkbox" class="inputcheckbox"/> Products   </label>    
+
+</div>
+<div>
+<p> Please send us your comment or suggestions. </p>
+<textarea  id="commenttext" class="inputtextarea" name="textarea" placeholder="Please enter your comment here.."> </textarea>
+</div>
+
+
+<div class="formgroup">
+    <button type="submit" id="submit" class="submit"> Send </button>
+</div>
+
+
+
+
+
+
+</form>
+</body>
+</html>
